@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/prefix"
+  },
+  "response": {
+    "status": 500,
+    "bodyFileName": "500.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

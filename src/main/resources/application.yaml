@@ -1,0 +1,14 @@
+spring:
+  liquibase:
+    change-log: classpath:/schema.xml
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://${embedded.postgresql.host}:${embedded.postgresql.port}/${embedded.postgresql.schema}
+    password: ${embedded.postgresql.password}
+    username: ${embedded.postgresql.user}
+
+prefix-service:
+  version: v2
